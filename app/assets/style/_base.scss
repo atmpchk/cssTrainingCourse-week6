@@ -1,0 +1,21 @@
+body {
+  font-family: $font-family-base;
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+}
+
+.text-md {
+  font-size: 1rem !important;
+}
+
+.text-lg {
+  font-size: 1.5rem !important;
+}
+
+.nav-link {
+  &.active {
+    color: $primary;
+  }
+}
