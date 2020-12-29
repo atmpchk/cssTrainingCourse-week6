@@ -1,0 +1,23 @@
+// Responsive font size
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $fs, $value in $font-sizes {
+      .fs#{$infix}-#{$fs} { font-size: $value }
+    }
+  }
+}
+
+// Responsive line height
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $lh, $value in $line-heights {
+      .lh#{$infix}-#{$lh} { line-height: $value }
+    }
+  }
+}
