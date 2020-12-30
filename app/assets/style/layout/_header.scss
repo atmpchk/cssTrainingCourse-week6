@@ -1,0 +1,14 @@
+.header {
+  &-logo {
+    a {
+      display: block;
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true");
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 128px;
+      height: 38px;
+      text-indent: 101%;
+      overflow: hidden;
+    }
+  }
+}
