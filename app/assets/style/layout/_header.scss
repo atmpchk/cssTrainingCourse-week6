@@ -19,12 +19,12 @@
     vertical-align: top;
     margin-left: -0.75rem;
     margin-top: -0.3rem;
-    :hover > & {
+    @at-root .cart:hover & {
       background: darken($primary, 5%);
     }
   }
   &-icon {
-    :hover > & {
+    @at-root .cart:hover & {
       color: darken($secondary, 25%) !important;
     }
   }
