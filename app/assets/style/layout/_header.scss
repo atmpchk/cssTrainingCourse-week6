@@ -12,3 +12,42 @@
     }
   }
 }
+.cart {
+  margin-right: 0.75rem;
+  &-badge {
+    padding: 1px 4px;
+    vertical-align: top;
+    margin-left: -0.75rem;
+    margin-top: -0.3rem;
+    :hover > & {
+      background: darken($primary, 5%);
+    }
+  }
+  &-icon {
+    :hover > & {
+      color: darken($secondary, 25%) !important;
+    }
+  }
+}
+
+.nav {
+  &-link {
+    background: $secondary;
+    color: $white !important;
+    text-align: center;
+    border-bottom: 1px solid $white;
+    line-height: 2;
+    &:hover {
+      background: darken($secondary, 25%);
+    }
+    @include media-breakpoint-up(md) {
+      background: white;
+      color: $secondary !important;
+      line-height: 1.5;
+      &:hover {
+        background: white;
+        color: darken($secondary, 25%) !important;
+      }
+    }
+  }
+}

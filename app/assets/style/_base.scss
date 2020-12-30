@@ -8,8 +8,8 @@ body {
   }
 }
 
-.badge {
-  &-tiny {
-    padding: 1px 4px;
+@include media-breakpoint-up(md) {
+  .mr-fix-md-2 {
+    margin-right: -0.5rem;
   }
 }
