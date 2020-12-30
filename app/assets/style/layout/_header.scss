@@ -1,19 +1,28 @@
 .header {
-  &-logo {
-    a {
-      display: block;
-      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true");
-      background-position: center center;
-      background-repeat: no-repeat;
-      width: 128px;
-      height: 38px;
-      text-indent: 101%;
-      overflow: hidden;
+  .nav {
+    &-link {
+      background: $secondary;
+      color: $white !important;
+      text-align: center;
+      border-bottom: 1px solid $white;
+      line-height: 2;
+      &:hover {
+        background: darken($secondary, 25%);
+      }
+      @include media-breakpoint-up(md) {
+        background: white;
+        color: $secondary !important;
+        line-height: 1.5;
+        &:hover {
+          background: white;
+          color: darken($secondary, 25%) !important;
+        }
+      }
     }
   }
 }
+
 .cart {
-  margin-right: 0.75rem;
   &-badge {
     padding: 1px 4px;
     vertical-align: top;
@@ -26,28 +35,6 @@
   &-icon {
     @at-root .cart:hover & {
       color: darken($secondary, 25%) !important;
-    }
-  }
-}
-
-.nav {
-  &-link {
-    background: $secondary;
-    color: $white !important;
-    text-align: center;
-    border-bottom: 1px solid $white;
-    line-height: 2;
-    &:hover {
-      background: darken($secondary, 25%);
-    }
-    @include media-breakpoint-up(md) {
-      background: white;
-      color: $secondary !important;
-      line-height: 1.5;
-      &:hover {
-        background: white;
-        color: darken($secondary, 25%) !important;
-      }
     }
   }
 }

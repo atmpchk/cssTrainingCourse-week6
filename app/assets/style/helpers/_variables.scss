@@ -319,7 +319,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $font-sizes: (
-  0: $font-size-base * 3,     // 48
+  0: $font-size-base * 3.5,   // 56 (mobile menu icon)
   1: $h1-font-size,           // 40
   2: $h2-font-size,           // 32
   3: $h3-font-size,           // 28
