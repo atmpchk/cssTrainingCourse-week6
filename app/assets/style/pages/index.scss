@@ -57,6 +57,26 @@
     object-position: left;
   }
 
+  &-align-bottom img {
+    object-position: bottom;
+  }
+
+  &-md {
+    // @include media-breakpoint-up(md) {
+    //   min-height: 420px;
+    // }
+    @media (min-width: 768px) {
+      min-height: 420px;
+    }
+
+    // @include media-breakpoint-up(lg) {
+    //   min-height: 540px;
+    // }
+    @media (min-width: 992px) {
+      min-height: 540px;
+    }
+  }
+
   &-large {
     min-height: 680px;
   }
