@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  &-left {
+    background-position: 15% center;
+  }
   &-index-banner {
     background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
   }
