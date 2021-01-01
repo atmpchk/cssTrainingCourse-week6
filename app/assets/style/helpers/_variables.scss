@@ -92,6 +92,7 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
     "pure":       $white,
+    "black":      $black
   ),
   $theme-colors
 );
@@ -158,7 +159,10 @@ $spacers: map-merge(
     10: ($spacer * 2.5),   // 40
     11: ($spacer * 2.75),  // 44
     12: ($spacer * 3),     // 48
-    13: ($spacer * 3.75)   // 60
+    13: ($spacer * 3.25),  // 52
+    14: ($spacer * 3.5),   // 56
+    15: ($spacer * 3.75),  // 60
+    16: ($spacer * 5.75)   // 92
   ),
   $spacers
 );

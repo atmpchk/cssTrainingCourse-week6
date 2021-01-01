@@ -1,0 +1,63 @@
+.jumbotron {
+  &-large {
+    height: 480px;
+    padding-top: 101px;
+    // @include media-breakpoint-up(md) {
+    //   padding-top: 295px;
+    //   height: 870px;
+    // }
+    @media (min-width: 768px) {
+      padding-top: 295px;
+      height: 870px;
+    }
+  }
+
+}
+
+.btn {
+  &-large {
+    // @include media-breakpoint-up(md) {
+    //   max-width: 350px;
+    // }
+    @media (min-width: 768px) {
+      max-width: 350px;
+    }
+  }
+}
+
+.rounded {
+  &-large {
+    border-radius: 30px;
+    border-width: 2px;
+  }
+}
+
+.img-container {
+  position: relative;
+  // width: 37%; /* The size you want */
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+  }
+
+  & img {
+    position: absolute; /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Make the picture taking the size of it's parent */
+    width: 100%; /* This if for the object-fit */
+    height: 100%; /* This if for the object-fit */
+    object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+  }
+
+  &-align-left img {
+    object-position: left;
+  }
+
+  &-large {
+    min-height: 680px;
+  }
+}
