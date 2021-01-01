@@ -1,0 +1,11 @@
+
+.bg {
+  &-base {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-index-banner {
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
+  }
+}

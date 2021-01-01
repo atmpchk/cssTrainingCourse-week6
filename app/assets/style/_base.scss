@@ -27,13 +27,3 @@ body {
     color: $primary;
   }
 }
-
-@include media-breakpoint-up(md) {
-  .mr-fix-md-2 {
-    margin-right: -0.5rem;
-  }
-
-  .mr-fix-md-3 {
-    margin-right: -1rem;
-  }
-}
