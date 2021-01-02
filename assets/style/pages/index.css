@@ -1,0 +1,63 @@
+.jumbotron-large {
+  height: 480px;
+  padding-top: 101px; }
+  @media (min-width: 768px) {
+    .jumbotron-large {
+      padding-top: 295px;
+      height: 870px; } }
+
+@media (min-width: 768px) {
+  .btn-large {
+    max-width: 350px; } }
+
+.rounded-large {
+  border-radius: 30px;
+  border-width: 2px; }
+
+.img-container {
+  position: relative; }
+  .img-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */ }
+  .img-container img {
+    position: absolute;
+    /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Make the picture taking the size of it's parent */
+    width: 100%;
+    /* This if for the object-fit */
+    height: 100%;
+    /* This if for the object-fit */
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* Equivalent of the background-size: cover; of a background-image */
+    -o-object-position: center;
+       object-position: center; }
+  .img-container-align-left img {
+    -o-object-position: left;
+       object-position: left; }
+  .img-container-align-bottom img {
+    -o-object-position: bottom;
+       object-position: bottom; }
+  .img-container-md-minus {
+    min-height: 520px; }
+  @media (min-width: 768px) {
+    .img-container-md {
+      min-height: 420px; } }
+  @media (min-width: 992px) {
+    .img-container-md {
+      min-height: 540px; } }
+  .img-container-large {
+    min-height: 680px; }
+
+.inline-link {
+  display: inline-block;
+  padding-left: .25rem;
+  padding-right: .25rem; }
+
+/*# sourceMappingURL=index.css.map */
