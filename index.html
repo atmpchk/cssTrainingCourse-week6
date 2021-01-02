@@ -14,7 +14,7 @@
   <header class="header">
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-dark px-0 py-0 py-md-1">
-      <h1 class="brand-logo mb-0"><a class="navbar-brand" href="./">d'Perfume</a></h1>
+      <h1 class="bg-logo mb-0"><a class="navbar-brand" href="./">d'Perfume</a></h1>
       <div class="d-flex align-items-center">
         <a class="d-block d-md-none text-decoration-none cart mr-6" href="#">
           <span class="material-icons align-text-bottom text-secondary cart-icon">shopping_cart</span>
@@ -79,7 +79,7 @@
     </div>
   </div>
 </section>
-<section class="products py-10 py-md-15">
+<section class="featured py-10 py-md-15">
   <div class="container">
     <ul class="mb-0">
       <li class="row no-gutters flex-md-row-reverse mb-8 mb-md-0">
@@ -134,7 +134,7 @@
           >
         </div>
         <div class="col-12 col-md-5 offset-md-1 col-lg-4 d-flex align-items-center">
-          <div class="py-md-15 py-lg-16">
+          <div class="py-md-15 py-lg-17">
             <ul class="">
               <li class="mb-5 mb-md-13">
                 <h4 class="lh-3 mb-1">1.<br>Levels of Preventive Maintenance Compliance</h4>
@@ -250,7 +250,7 @@
   <div class="container">
     <div class="d-flex align-items-center">
       <section class="flex-grow-1 d-flex align-items-center justify-content-between justify-content-md-start">
-        <h1 class="brand-logo brand-logo-footer mb-0 mr-md-8"><a href="./">d'Perfume</a></h1>
+        <h1 class="bg-logo bg-logo-footer mb-0 mr-md-8"><a href="./">d'Perfume</a></h1>
         <p class="text-pure fs-7 mb-0">© 2020. All Rights Reserved.</p>
       </section>
       <nav class="d-none d-md-block fs-5 px-0">
@@ -270,13 +270,32 @@
   </div>
 </footer>
 
+
+  <!-- Modal -->
+<div class="modal fade" id="favorited" tabindex="-1" aria-labelledby="favoritedModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center text-primary border-0 fs-5">
+        已加入我的收藏
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="intoCart" tabindex="-1" aria-labelledby="intoCartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center text-primary border-0 fs-5">
+        已加入購物車
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
-  <script>
-    // if (['/', '/index.html'].includes(window.location.pathname)) {
-    //   document.getElementById('brands').style.cssText = 'display: none !important;'
-    // }
-  </script>
 </body>
 
 </html>
