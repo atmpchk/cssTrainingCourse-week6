@@ -13,11 +13,20 @@
 <body>
   <%- include('header'); %>
 
-  <%- contents %>
+  <main>
+    <%- contents %>
+
+    <%- include('subscribe'); %>
+  </main>
 
   <%- include('footer'); %>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script>
+    if (['/', '/index.html'].includes(window.location.pathname)) {
+      // document.getElementById('subscribe').style.display = 'none'
+    }
+    </script>
 </body>
 
 </html>
