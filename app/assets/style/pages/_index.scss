@@ -2,11 +2,7 @@
   &-large {
     height: 480px;
     padding-top: 101px;
-    // @include media-breakpoint-up(md) {
-    //   padding-top: 295px;
-    //   height: 870px;
-    // }
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
       padding-top: 295px;
       height: 870px;
     }
@@ -16,10 +12,7 @@
 
 .btn {
   &-large {
-    // @include media-breakpoint-up(md) {
-    //   max-width: 350px;
-    // }
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
       max-width: 350px;
     }
   }
