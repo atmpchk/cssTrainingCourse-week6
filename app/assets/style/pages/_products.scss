@@ -1,0 +1,10 @@
+.page-item {
+  &.active .page-link {
+    text-decoration: underline;
+  }
+  .page-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
