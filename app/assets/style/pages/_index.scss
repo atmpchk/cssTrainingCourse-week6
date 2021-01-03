@@ -16,6 +16,18 @@
       max-width: 350px;
     }
   }
+  &-outline-pure {
+    &:hover {
+      color: $white;
+      background-color: rgba($white, 0.3);
+    }
+  }
+  &-outline-black {
+    &:hover {
+      color: $black;
+      background-color: darken($white, 6%);
+    }
+  }
 }
 
 .rounded {
