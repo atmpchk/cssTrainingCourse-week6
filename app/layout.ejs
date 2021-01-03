@@ -15,19 +15,19 @@
 
   <main>
     <% if (['products'].includes(current)) { %>
-      <%- include('brands'); %>
+      <%- include('components/brands'); %>
     <% } %>
 
     <%- contents %>
 
-    <%- include('subscribe'); %>
+    <%- include('components/subscribe'); %>
   </main>
 
   <%- include('footer'); %>
 
-  <%- include('favorited'); %>
+  <%- include('components/favorited'); %>
 
-  <%- include('intoCart'); %>
+  <%- include('components/intoCart'); %>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
