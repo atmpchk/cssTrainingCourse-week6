@@ -11318,15 +11318,6 @@ ul {
 .nav-link.active {
   color: #916000; }
 
-.text-line-through {
-  text-decoration: line-through; }
-
-.border-lg {
-  border-width: 2px; }
-
-.mb-tiny {
-  margin-bottom: .125rem; }
-
 .mask {
   position: relative;
   display: -webkit-box;
@@ -11350,6 +11341,103 @@ ul {
     right: 0;
     background: rgba(0, 0, 0, 0.3);
     z-index: 1; }
+
+.bg-base {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-left {
+  background-position-x: left; }
+
+.bg-left-plus {
+  background-position-x: 15%; }
+
+.bg-index-banner {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true"); }
+
+.bg-subscribe {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true"); }
+  .bg-subscribe-height {
+    height: 600px; }
+
+.bg-logo a {
+  display: block;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 128px;
+  height: 38px;
+  text-indent: 101%;
+  overflow: hidden; }
+
+.bg-logo-footer a {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfumewhite.png?raw=true"); }
+
+.border-lg {
+  border-width: 2px; }
+
+.rounded-xxxl {
+  border-radius: 30px; }
+
+@media (min-width: 768px) {
+  .btn-large {
+    max-width: 350px; } }
+
+.btn-outline-pure:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.btn-outline-black:hover {
+  color: #000;
+  background-color: #f0f0f0; }
+
+.img-container {
+  position: relative; }
+  .img-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */ }
+  .img-container img {
+    position: absolute;
+    /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Make the picture taking the size of it's parent */
+    width: 100%;
+    /* This if for the object-fit */
+    height: 100%;
+    /* This if for the object-fit */
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* Equivalent of the background-size: cover; of a background-image */
+    -o-object-position: center;
+       object-position: center; }
+  .img-container-align-left img {
+    -o-object-position: left;
+       object-position: left; }
+  .img-container-align-bottom img {
+    -o-object-position: bottom;
+       object-position: bottom; }
+  .img-container-align-top-plus img {
+    -o-object-position: center 35%;
+       object-position: center 35%; }
+  .img-container-md-minus {
+    min-height: 520px; }
+  @media (min-width: 768px) {
+    .img-container-md {
+      min-height: 420px; } }
+  @media (min-width: 992px) {
+    .img-container-md {
+      min-height: 540px; } }
+  .img-container-large {
+    min-height: 680px; }
+
+.mb-tiny {
+  margin-bottom: .125rem; }
 
 .fs-0 {
   font-size: 3.5rem !important; }
@@ -11510,81 +11598,8 @@ ul {
   .lh-xl-4 {
     line-height: 2; } }
 
-.bg-base {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.bg-left {
-  background-position-x: left; }
-
-.bg-left-plus {
-  background-position-x: 15%; }
-
-.bg-index-banner {
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true"); }
-
-.bg-subscribe {
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true"); }
-  .bg-subscribe-height {
-    height: 600px; }
-
-.bg-logo a {
-  display: block;
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfume.png?raw=true");
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 128px;
-  height: 38px;
-  text-indent: 101%;
-  overflow: hidden; }
-
-.bg-logo-footer a {
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d’Perfumewhite.png?raw=true"); }
-
-.img-container {
-  position: relative; }
-  .img-container:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-    /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */ }
-  .img-container img {
-    position: absolute;
-    /* Take your picture out of the flow */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* Make the picture taking the size of it's parent */
-    width: 100%;
-    /* This if for the object-fit */
-    height: 100%;
-    /* This if for the object-fit */
-    -o-object-fit: cover;
-       object-fit: cover;
-    /* Equivalent of the background-size: cover; of a background-image */
-    -o-object-position: center;
-       object-position: center; }
-  .img-container-align-left img {
-    -o-object-position: left;
-       object-position: left; }
-  .img-container-align-bottom img {
-    -o-object-position: bottom;
-       object-position: bottom; }
-  .img-container-align-top-plus img {
-    -o-object-position: center 35%;
-       object-position: center 35%; }
-  .img-container-md-minus {
-    min-height: 520px; }
-  @media (min-width: 768px) {
-    .img-container-md {
-      min-height: 420px; } }
-  @media (min-width: 992px) {
-    .img-container-md {
-      min-height: 540px; } }
-  .img-container-large {
-    min-height: 680px; }
+.text-line-through {
+  text-decoration: line-through; }
 
 .header .navbar {
   position: relative; }
@@ -11641,14 +11656,6 @@ ul {
     .jumbotron-large {
       padding-top: 295px;
       height: 870px; } }
-
-@media (min-width: 768px) {
-  .btn-large {
-    max-width: 350px; } }
-
-.rounded-large {
-  border-radius: 30px;
-  border-width: 2px; }
 
 .inline-link {
   display: inline-block;
