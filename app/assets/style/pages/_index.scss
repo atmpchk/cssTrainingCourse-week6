@@ -10,34 +10,6 @@
 
 }
 
-.btn {
-  &-large {
-    @include media-breakpoint-up(md) {
-      max-width: 350px;
-    }
-  }
-  &-outline-pure {
-    &:hover {
-      color: $white;
-      background-color: rgba($white, 0.3);
-    }
-  }
-  &-outline-black {
-    &:hover {
-      color: $black;
-      background-color: darken($white, 6%);
-    }
-  }
-}
-
-.rounded {
-  &-large {
-    border-radius: 30px;
-    border-width: 2px;
-  }
-}
-
-
 .inline-link {
   display: inline-block;
   padding-left: .25rem;
