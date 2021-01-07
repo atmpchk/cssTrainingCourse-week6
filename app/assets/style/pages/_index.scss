@@ -15,3 +15,24 @@
   padding-left: .25rem;
   padding-right: .25rem;
 }
+
+.mask {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-text {
+    position: absolute;
+    z-index: 1;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($black, .3);
+    z-index: 1;
+  }
+}
